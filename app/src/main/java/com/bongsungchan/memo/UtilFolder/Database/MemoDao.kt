@@ -19,7 +19,5 @@ interface MemoDao  {
     @Query("delete from memo where id = :id")
     fun deleteById(id : Long)
 
-    @Query("update memo set message =:message, date =:date where id = :id")
-    fun updateMemo(id : Long, message : String, date : String)
 
 }
